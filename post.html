@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/stylesPost.css">
+    <link rel="stylesheet" href="/css/tablet.css" media="screen and (min-width:420px)">
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo"><img src="/icons/logo2.png" alt="Logo Maxi Cusco">
+        <h1>maxi cusco</h1>
+      </div>
+      <div class="menu"><img src="/icons/menu.png" alt="Menú"></div>
+    </header>
+  </body>
+  <main>
+    <section id="post">
+      <h1>Nuevo producto</h1>
+      <form id="uploadImage" enctype="multipart/form-data">
+        <p>Subir archivo
+          <input id="file" type="file" name="foto">
+        </p>
+        <p>Nombre</p>
+        <input width="300" type="text" name="nombre" id="nameInput">
+        <select name="listaCategory" id="categoryInput">
+          <option disabled selected>Seleciona la categoria</option>
+          <option value="electro">Electro</option>
+          <option value="roperos">Roperos</option>
+          <option value="termos">Termos</option>
+          <option value="equipaje">Equipaje</option>
+          <option value="belleza">Belleza</option>
+        </select>
+        <p>Precio</p>
+        <input width="300" type="number" name="precio" id="priceInput">
+        <p id="caracteristicas">Caracteristicas</p>
+        <button class="addCarac" id="addCarac">Agregar Caracteristica</button>
+        <div class="cajaCarac" id="cajaCarac">
+          <input class="caracInput" width="300" type="text" name="carac">
+        </div>
+        <button class="finalizar" id="upload">Finalizar</button>
+      </form>
+    </section>
+    <section id="articulos"></section>
+  </main>
+</html>
+<script src="/JS/upload_aws.js"></script>
